@@ -1,0 +1,3 @@
+AlwaysOnSPA=dc96d1bb
+GradeCheckSPA=3c607d6f
+BaseSPA=e630a7de

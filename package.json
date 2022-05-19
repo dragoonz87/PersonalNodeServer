@@ -1,0 +1,42 @@
+{
+  "name": "sam-personal-server",
+  "version": "1.0.0",
+  "description": "Sam's personal server",
+  "main": "index.js",
+  "scripts": {
+    "cdn:build": "python3 scripts/consolidate_spas.py",
+    "lint": "eslint .",
+    "start": "node src/app.js",
+    "start:dev": "nodemon src/app.js --ignore utils/jwtUtil/key.json",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "Sam Bersch",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "debug": "^4.3.3",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "jose": "^4.3.9",
+    "mongodb": "^4.3.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "supertest": "^6.2.2"
+  }
+}

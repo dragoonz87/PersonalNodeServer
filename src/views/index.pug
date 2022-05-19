@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html
+  head
+    link(rel='stylesheet', href=CDN_URL + '/manifest.json')
+    link(rel='stylesheet', href=CDN_URL + '/static/css/main.css')
+    link(rel='stylesheet', href=BASE_URL + '/css/base-style.css')
+    title Sam's Page
+  body
+    p(style='margin: 0')
+      script
+        | let user = !{USER};
+    noscript You must enable JavaScript to run this app
+    div(id='main')
+    p(style='margin: 0')
+      script(src=CDN_URL + '/static/js/main.js')
